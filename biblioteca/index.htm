@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Biblioteca </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <!-- introducir los scripts -->
+        <script type="text/javascript" src="jquery/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="jquery/jquerymobile45/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/biblioteca.js"></script>
+        
+        <!-- introducir los css -->
+        <link rel="stylesheet" type="text/css" href="jquery/jquerymobile45/jquery.mobile-1.4.5.min.css"/>
+    </head>
+    <body>
+        <div id="Mipagina" data-role="page">
+            <div id="cabecera" data-role="header"></div>
+            <div id="contenido" data-role="content">
+                <br>
+                <ul data-role="listview">
+                    <li> <a href="#pag2" data-rel="dialog">Añadir</a></li>
+                    <li> <a href="">Borrar</a></li>
+                    <li> <a href="#listar">Ver libros</a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div id="pie" data-role="footer"></div>
+        </div>
+        
+        <div id="pag2" data-role="dialog">
+            <div id="pag_dialogo" data-role="content"> 
+                <p> <input type="text" id="titulo" placeholder="titulo" /></p>
+                <p> <input type="text" id="autor" placehoder="autor" /></p>
+                <p> <input type="text" id="resumen" placehoder="resumen" /></p>
+                <p> <button id="guardarlibro">Guardar </button> </p>
+            </div>
+        </div>
+        
+    </body>
+</html>
